@@ -1,0 +1,170 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	background:url(images/bg.png) top left repeat-x #000000;
+	color:#FFFFFF;
+	font-size:13px;
+	margin:0px;
+	padding:0px;
+}
+
+#wrapper{
+	width:960px;
+	margin:0px auto;
+}
+/*Banner*/
+#banner{
+	margin-top:10px;
+}
+
+/* Menu */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*==Style cơ bản cho website==*/
+body {
+  font-family: sans-serif;
+  color: #333;
+}
+
+/*==Style cho menu===*/
+#menu{
+	margin-top:15px;
+}
+#menu ul { 
+  list-style-type: none;
+  text-align: center;
+}
+#menu li {
+	background-image:url(images/menu.png);
+  color: #f1f1f1;
+  display: inline-block;
+  width: 100px;
+  height: 32px;
+  line-height: 40px;
+  margin-left: -5px;
+}
+#menu a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+#menu li:hover {
+	background-image:url(images/hovermenu.png);
+  color: #333;
+}
+.sub-menu li {
+  display: none;
+}
+#menu li {
+ position: relative;
+}
+.sub-menu {
+ display: none;
+ position: absolute;
+}
+#menu li:hover .sub-menu {
+ display: block;
+}
+.sub-menu li {
+ margin-left: 0 !important;
+}
+/* Content */
+
+#left{
+	float:left;
+	clear:none;
+	width:350px;
+	margin-top:0px;
+}
+
+.left-divider{
+	background:url(images/left-divider.png) top left no-repeat;
+	width:37px;
+	height:16px;
+	float:left;
+	clear:none;
+}
+
+.middle-divider{
+	background:url(images/middle-divider.png) top left repeat-x;
+	width:250px;
+	height:16px;
+	float:left;
+	clear:none;
+}
+
+.right-divider{
+	background:url(images/right-divider.png) top left no-repeat;
+	width:37px;
+	height:16px;
+	float:left;
+	clear:none;
+}
+
+.more-btn{
+	text-align:right;
+	margin-top:0px;
+}
+
+.links ul{
+	list-style:square;
+	margin:0px;
+	padding:0px;
+	padding-left:15px;
+}
+.links ul li a{
+	color: #FFFFFF;
+	font-size:14px;
+}
+.links ul li a:hover{
+	color: #FF0000;
+}
+
+#middle{
+	float:left;
+	clear:none;
+	width:350px;
+	margin-top:0px;
+	margin-left:25px;
+}
+
+#right{
+	float:left;
+	clear:none;
+	margin-top:0px;
+}
+
+#news-box{
+	width:200px;
+	height:300px;
+	background:#000000;
+	border:1px solid #FF0000;
+	margin-left:25px;
+	margin-top:10px;
+}
+
+
+.news-divider{
+	background:url(images/divider.png) top left no-repeat;
+	width:189px;
+	height:34px;
+	margin-left:5px;
+	margin-top:5px;
+}
+
+#footer{
+	background:url(images/footer.png) top left;
+	height:34px;
+	text-align:center;
+	color:#FFFFFF;
+	font-size:11px;
+	padding-top:8px;
+	margin-top:25px;
+	margin-bottom:0px;
+	padding-bottom:0px;
+}
