@@ -47,13 +47,14 @@
         <!-- content de bang cho nay -->
 		<center>
             <p style="font-size:15px; font-weight:bold; color:#fff; width:301px; background-color:#8d0e0e">Bảng Loại SP</p>
-            <asp:DetailsView ID="DetailsView1" runat="server" Height="50px" Width="301px" AllowPaging="True" AutoGenerateRows="False" DataKeyNames="MaLSP" DataSourceID="SqlDataSource1">
+            <asp:DetailsView ID="DetailsView1" runat="server" Height="50px" Width="301px" AllowPaging="True" AutoGenerateRows="False" DataKeyNames="MaLSP" DataSourceID="SqlDataSource2">
                 <Fields>
                     <asp:BoundField DataField="MaLSP" HeaderText="MaLSP" ReadOnly="True" SortExpression="MaLSP" />
                     <asp:BoundField DataField="TenLSP" HeaderText="TenLSP" SortExpression="TenLSP" />
                     <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowInsertButton="True" />
                 </Fields>
             </asp:DetailsView>
+		    <asp:SqlDataSource ID="SqlDataSource2" runat="server"></asp:SqlDataSource>
 		    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:QLBHConnectionString3 %>" DeleteCommand="DELETE FROM [LoaiSanPham] WHERE [MaLSP] = @MaLSP" InsertCommand="INSERT INTO [LoaiSanPham] ([MaLSP], [TenLSP]) VALUES (@MaLSP, @TenLSP)" SelectCommand="SELECT [MaLSP], [TenLSP] FROM [LoaiSanPham]" UpdateCommand="UPDATE [LoaiSanPham] SET [TenLSP] = @TenLSP WHERE [MaLSP] = @MaLSP">
                 <DeleteParameters>
                     <asp:Parameter Name="MaLSP" Type="String" />
