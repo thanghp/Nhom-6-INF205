@@ -47,7 +47,7 @@
         <!-- content de bang cho nay -->
 		<center>
             <p style="font-size:15px; font-weight:bold; color:#fff; width:301px; background-color:#8d0e0e">Bảng Sản Phẩm</p>
-            <asp:DetailsView ID="DetailsView1" runat="server" Height="50px" Width="301px" AllowPaging="True" AutoGenerateRows="False" DataKeyNames="MaSP" DataSourceID="SqlDataSource1">
+            <asp:DetailsView ID="DetailsView1" runat="server" Height="50px" Width="301px" AllowPaging="True" AutoGenerateRows="False" DataKeyNames="MaSP" DataSourceID="SqlDataSource1" >
                 <Fields>
                     <asp:BoundField DataField="MaSP" HeaderText="MaSP" ReadOnly="True" SortExpression="MaSP" />
                     <asp:BoundField DataField="TenSP" HeaderText="TenSP" SortExpression="TenSP" />
